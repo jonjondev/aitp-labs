@@ -1,0 +1,95 @@
+body {
+    margin: 0 auto;
+    font-size: 130%;
+    margin: 10px
+}
+
+ul {
+    padding-left: 18px;
+}
+
+a {
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.minimal-padding * {
+    padding: 0;
+    margin: 15px;
+    line-height: 10px;
+}
+
+.no-line-height {
+    line-height: 0px;
+}
+
+.unbolded {
+    font-weight: 300;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.col {
+    height: 95%;
+}
+
+.col-container {
+    display: flex;
+    flex-flow: row nowrap;
+    border: 5px solid black;
+}
+
+.col-left {
+    flex: 0 0 auto;
+    border-right: 5px solid black;
+}
+
+.col-right {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header-section {
+    border-bottom: 5px solid black;
+    width: 100%;
+}
+
+.header-section-inner-box {
+    margin: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.header-section-inner-box-left {
+    flex: 0 0 50%;
+    border-right: 1px solid black;
+}
+
+.header-section-inner-box-right {
+    flex: 0 0 50%;
+}
+
+.body-section {
+    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+}
+
+.body-content {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.footer-section {
+    border-top: 5px solid black;
+    width: 100%;
+}
