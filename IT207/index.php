@@ -70,7 +70,11 @@
                             </h3>
                         </div>
                         <div class="header-section-inner-box-right text-center minimal-padding">
-                            <h3 >Your Name</h3>
+                            <h3 >
+                                <?php
+                                echo $user_name;
+                                ?>
+                            </h3>
                             <h3 class="unbolded">
                                 <?php
                                 # Create mailto link for email
