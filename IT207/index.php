@@ -8,6 +8,8 @@
         <?php
         # Requires a file that defines a number of variables
         require 'vars.php';
+        # Requires a file that defines a number of user-defined functions
+        require 'functions.php';
         ?>
     </head>
     <body>
