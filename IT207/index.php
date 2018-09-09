@@ -4,7 +4,14 @@
     <head>
         <title>A Webpage</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <link rel="stylesheet" href="/IT207/styles.css" />
+        <?php
+            $host = $_SERVER['HTTP_HOST'];
+            $current_relative_dir = "./IT207";
+            if ($host != "localhost:3000") {
+                $current_relative_dir = "~jmoallem/IT207";
+            }
+            echo "<link rel='stylesheet' href='$current_relative_dir/styles.css' />"
+        ?>
         <?php
         # Requires a file that defines a number of variables
         require 'vars.php';
