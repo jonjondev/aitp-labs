@@ -1,7 +1,8 @@
 body {
     margin: 0 auto;
     font-size: 130%;
-    margin: 10px
+    margin: 10px;
+    word-wrap: break-word;
 }
 
 ul {
@@ -19,7 +20,7 @@ a {
 .minimal-padding * {
     padding: 0;
     margin: 15px;
-    line-height: 10px;
+    line-height: 20px;
 }
 
 .no-line-height {
