@@ -19,28 +19,21 @@
                     <br />
                     <h3 class="no-line-height">Lab Assignments</h3>
                     <ul>
-                        <li>
-                            <a href="#">Assignment 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Assignment 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Assignment 3</a>
-                        </li>
-                        <li>
-                            <a href="#">Assignment 4</a>
-                        </li>
+                        <?php
+                        # Display four assignment links from a loop
+                        for ($i = 1; $i <= 4; $i++) {
+                            echo list_itemify("<a href='/IT207/LAB$i'>Assignment $i</a>");
+                        }
+                        ?>
                     </ul>
                     <br />
                     <h3 class="no-line-height">Lab Practica</h3>
                     <ul>
-                        <li>
-                            <a href="#">Practicum 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Practicum 2</a>
-                        </li>
+                        <?php
+                        for ($i = 1; $i <= 2; $i++) {
+                            echo list_itemify("<a href='/IT207/LABP$i'>Practicum $i</a>");
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>
