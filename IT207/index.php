@@ -60,6 +60,8 @@
                                 <span>Last Modified:</span>
                                 <span class="unbolded">
                                     <?php
+                                    # Sets PHP to use EST/EDT timezones
+                                    date_default_timezone_set('US/Eastern');
                                     # Outputs the page's last modification time
                                     echo date("H:i M d, Y T", getlastmod());
                                     ?>
