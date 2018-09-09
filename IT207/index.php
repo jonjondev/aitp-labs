@@ -5,6 +5,10 @@
         <title>A Webpage</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="stylesheet" href="/IT207/styles.css" />
+        <?php
+        # Requires a file that defines a number of variables
+        require 'vars.php';
+        ?>
     </head>
     <body>
         <div class="col-container">
