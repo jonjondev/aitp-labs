@@ -76,7 +76,12 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3 class="text-center">Copyright Content</h3>
+                    <h3 class="text-center">
+                        <?php
+                        $short_user_name = str_replace(" David ", " ", $user_name);
+                        echo "Copyright $short_user_name $copyright_year"
+                        ?>
+                    </h3>
                 </div>
             </div>
         </div>
