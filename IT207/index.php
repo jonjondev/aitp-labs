@@ -48,7 +48,13 @@
                         <div class="header-section-inner-box-right text-center minimal-padding">
                             <h3 >Your Name</h3>
                             <h3 class="unbolded">
-                                <a href="#">Your Email</a>
+                                <?php
+                                # Create mailto link for email
+                                $mailto_link = "mailto:" . $user_email;
+                                # Display mailto link
+                                echo "<a href='$mailto_link'>$user_email</a>"
+
+                                ?>
                             </h3>
                             <h3>
                                 <span>Last Modified:</span>
