@@ -5,14 +5,15 @@
         <title>A Webpage</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <?php
-            $host = $_SERVER['HTTP_HOST'];
-            $current_relative_dir = "./IT207";
-            if ($host != "localhost:3000") {
-                $current_relative_dir = ".";
-            }
-            echo "<link rel='stylesheet' href='$current_relative_dir/styles.css' />"
-        ?>
-        <?php
+        # Set default relative directory for testing
+        $current_relative_dir = "./IT207";
+        # Check if current environment is production
+        if ($_SERVER['HTTP_HOST'] != "localhost:3000") {
+            # Simplify directory address for production
+            $current_relative_dir = ".";
+        }
+        # Link to stylesheet based on env
+        echo "<link rel='stylesheet' href='$current_relative_dir/styles.css' />";
         # Requires a file that defines a number of variables
         require 'vars.php';
         # Requires a file that defines a number of user-defined functions
@@ -29,6 +30,7 @@
                         <?php
                         # Display four assignment links from a loop
                         for ($i = 1; $i <= 4; $i++) {
+                            # Make item display inside <li></li> tags
                             echo list_itemify("<a href='/IT207/LAB$i'>Assignment $i</a>");
                         }
                         ?>
@@ -37,7 +39,9 @@
                     <h3 class="no-line-height">Lab Practica</h3>
                     <ul>
                         <?php
+                        # Display two practicum links from a loop
                         for ($i = 1; $i <= 2; $i++) {
+                            # Make item display inside <li></li> tags
                             echo list_itemify("<a href='/IT207/LABP$i'>Practicum $i</a>");
                         }
                         ?>
