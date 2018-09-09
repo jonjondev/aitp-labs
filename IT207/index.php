@@ -41,9 +41,21 @@
                 <div class="header-section">
                     <div class="header-section-inner-box">
                         <div class="header-section-inner-box-left text-center minimal-padding">
-                            <h3>Course Title, Section, Semester</h3>
                             <h3 class="unbolded">Instructor's Name</h3>
                             <h3 class="unbolded">University Name</h3>
+                            <h3>
+                                <?php
+                                # Add all items to an array backwards
+                                $display_info_items = array($semester_taken, 
+                                    "Section $course_section", $course_title, "BAD_DATA");
+                                # Remove last item from the array
+                                array_pop($display_info_items);
+                                # Reverse the order of items in the array
+                                $display_info_items = array_reverse($display_info_items);
+                                # Display items as a comma-separated list
+                                echo join(", ", $display_info_items);
+                                ?>
+                            </h3>
                         </div>
                         <div class="header-section-inner-box-right text-center minimal-padding">
                             <h3 >Your Name</h3>
