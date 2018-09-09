@@ -10,7 +10,7 @@
             if ($host != "localhost:3000") {
                 $current_relative_dir = "~jmoallem/IT207";
             }
-            echo "<link rel='stylesheet' href='$current_relative_dir/styles.css' />"
+            echo "<link rel='stylesheet' href='./styles.css' />"
         ?>
         <?php
         # Requires a file that defines a number of variables
