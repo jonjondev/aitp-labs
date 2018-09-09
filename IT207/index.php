@@ -4,7 +4,7 @@
     <head>
         <title>A Webpage</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="/IT207/styles.css" />
     </head>
     <body>
         <div class="col-container">
