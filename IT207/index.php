@@ -58,7 +58,12 @@
                             </h3>
                             <h3>
                                 <span>Last Modified:</span>
-                                <span class="unbolded">Time Date Zone</span>
+                                <span class="unbolded">
+                                    <?php
+                                    # Outputs the page's last modification time
+                                    echo date("H:i M d, Y T", getlastmod());
+                                    ?>
+                                </span>
                             </h3>
                         </div>
                     </div>
