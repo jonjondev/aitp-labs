@@ -8,9 +8,9 @@
             $host = $_SERVER['HTTP_HOST'];
             $current_relative_dir = "./IT207";
             if ($host != "localhost:3000") {
-                $current_relative_dir = "~jmoallem/IT207";
+                $current_relative_dir = ".";
             }
-            echo "<link rel='stylesheet' href='./styles.css' />"
+            echo "<link rel='stylesheet' href='$current_relative_dir/styles.css' />"
         ?>
         <?php
         # Requires a file that defines a number of variables
