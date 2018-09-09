@@ -41,7 +41,6 @@
                 <div class="header-section">
                     <div class="header-section-inner-box">
                         <div class="header-section-inner-box-left text-center minimal-padding">
-                            <h3 class="unbolded">University Name</h3>
                             <h3>
                                 <?php
                                 # Add all items to an array backwards
@@ -60,6 +59,13 @@
                                 # Get a subsring that does not include underscores
                                 # (see vars.php for original form)
                                 echo substr($instructor_name, 3, 10);
+                                ?>
+                            </h3>
+                            <h3 class="unbolded">
+                                <?php
+                                # Upcase the string
+                                # (see vars.php for original form)
+                                echo ucwords($university_name)
                                 ?>
                             </h3>
                         </div>
