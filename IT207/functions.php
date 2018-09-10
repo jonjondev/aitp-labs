@@ -1,3 +1,9 @@
+<!--
+functions.php
+Jonathan Moallem 09/09/2018
+
+This contains a number of useful user-defined functions for the application.
+-->
 <?php
 /* 
  * Formats content with <li></li> tags around it.
