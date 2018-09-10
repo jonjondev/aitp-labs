@@ -28,8 +28,8 @@ This is the home page for the site.
     </head>
     <body>
         <div class="col-container">
-            <div class="col col-left">
-                <div class="container">
+            <div class="col-left">
+                <div class="col-left-content">
                     <br />
                     <h3 class="no-line-height">Lab Assignments</h3>
                     <ul>

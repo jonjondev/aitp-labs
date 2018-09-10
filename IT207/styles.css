@@ -31,30 +31,33 @@ a {
     font-weight: 300;
 }
 
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .col {
     min-height: 95vh;
 }
 
 .col-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     border: 5px solid black;
 }
 
 .col-left {
-    flex: 0 0 auto;
+    flex: 1 0 auto;
     border-right: 5px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.col-left-content {
+    flex: 0 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .col-right {
-    flex: 1 1 auto;
+    flex: 1 1 80%;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 
 .header-section {
@@ -81,15 +84,15 @@ a {
 .body-section {
     flex: 1 1 auto;
     width: 100%;
-    padding: 10px;
     display: flex;
 }
 
 .body-section-content {
     flex-flow: row wrap;
     border: 1px solid black;
-    padding: 10px;
-    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
     width: 100%;
 }
 
