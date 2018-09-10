@@ -18,6 +18,9 @@ The site layout, which loads content from a folder specified by the calling page
             # Simplify directory address for production
             $current_relative_dir = ".";
         }
+        if ($page_name != ".") {
+            $current_relative_dir = "..";
+        }
         # Link to stylesheet based on env
         echo "<link rel='stylesheet' href='$current_relative_dir/styles.css' />";
         # Requires a file that defines a number of variables
