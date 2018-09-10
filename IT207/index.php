@@ -54,7 +54,7 @@ This is the home page for the site.
                     </ul>
                 </div>
             </div>
-            <div class="col col-right">
+            <div class="col-right">
                 <div class="header-section">
                     <div class="header-section-inner-box">
                         <div class="header-section-inner-box-left text-center minimal-padding">
