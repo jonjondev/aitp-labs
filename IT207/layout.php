@@ -37,7 +37,7 @@ The site layout, which loads content from a folder specified by the calling page
                         # Display four assignment links from a loop
                         for ($i = 1; $i <= 4; $i++) {
                             # Make item display inside <li></li> tags
-                            echo list_itemify("<a href='/IT207/LAB$i'>Assignment $i</a>");
+                            echo list_itemify("<a href='./IT207/LAB$i'>Assignment $i</a>");
                         }
                         ?>
                     </ul>
@@ -48,7 +48,7 @@ The site layout, which loads content from a folder specified by the calling page
                         # Display two practicum links from a loop
                         for ($i = 1; $i <= 2; $i++) {
                             # Make item display inside <li></li> tags
-                            echo list_itemify("<a href='/IT207/LABP$i'>Practicum $i</a>");
+                            echo list_itemify("<a href='./IT207/LABP$i'>Practicum $i</a>");
                         }
                         ?>
                     </ul>
