@@ -89,7 +89,9 @@ This is the home page for the site.
                         <div class="header-section-inner-box-right text-center minimal-padding">
                             <h3 >
                                 <?php
-                                echo $user_name;
+                                # Remove middle name from display
+                                # (see vars.php for original form)
+                                echo str_replace(" David ", " ", $user_name);
                                 ?>
                             </h3>
                             <h3 class="unbolded">
