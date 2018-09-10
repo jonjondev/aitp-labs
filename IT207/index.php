@@ -123,8 +123,8 @@ This is the home page for the site.
                 <div class="footer-section">
                     <h3 class="text-center">
                         <?php
-                        $short_user_name = str_replace(" David ", " ", $user_name);
-                        echo "Copyright $short_user_name $copyright_year"
+                        # Display copyright text
+                        echo $copyright
                         ?>
                     </h3>
                 </div>

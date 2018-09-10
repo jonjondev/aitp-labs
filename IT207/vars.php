@@ -13,6 +13,6 @@ $semester_taken = "Fall 2018";
 $instructor_name = "___Erhan Uyar___";
 $university_name = "george mason university";
 $user_name = "Jonathan David Moallem";
-$copyright_year = "2018"
 $user_email = "jmoallem@gmu.edu";
+$copyright = "This web site is entirely original work and full academic copyright is retained. This web site complies with the Mason Honor Code (http://oai.gmu.edu/mason-honor-code/)."
 ?>
