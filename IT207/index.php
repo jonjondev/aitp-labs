@@ -116,8 +116,10 @@ This is the home page for the site.
                     </div>
                 </div>
                 <div class="body-section">
-                    <div class="body-content">
-                        <h3>Lab Content</h3>
+                    <div class="body-section-content">
+                        <?php
+                        include("$page_name/content.php");
+                        ?>
                     </div>
                 </div>
                 <div class="footer-section">
