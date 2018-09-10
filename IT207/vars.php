@@ -13,6 +13,6 @@ $semester_taken = "Fall 2018";
 $instructor_name = "___Erhan Uyar___";
 $university_name = "george mason university";
 $user_name = "Jonathan David Moallem";
-$user_email = "jdmoallem@gmail.com";
 $copyright_year = "2018"
+$user_email = "jmoallem@gmu.edu";
 ?>
