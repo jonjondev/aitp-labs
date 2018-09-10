@@ -12,7 +12,7 @@ This is the home page for the site.
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <?php
         # Set default relative directory for testing
-        $current_relative_dir = "./IT207";
+        $current_relative_dir = "./";
         # Check if current environment is production
         if ($_SERVER['HTTP_HOST'] != "localhost:3000") {
             # Simplify directory address for production
@@ -58,7 +58,7 @@ This is the home page for the site.
                 <div class="header-section">
                     <div class="header-section-inner-box">
                         <div class="header-section-inner-box-left text-center minimal-padding">
-                            <h3>
+                            <h4>
                                 <?php
                                 # Add all items to an array backwards
                                 $display_info_items = array($semester_taken, 
@@ -70,31 +70,31 @@ This is the home page for the site.
                                 # Display items as a comma-separated list
                                 echo join(", ", $display_info_items);
                                 ?>
-                            </h3>
-                            <h3 class="unbolded">
+                            </h4>
+                            <h4 class="unbolded">
                                 <?php
                                 # Get a subsring that does not include underscores
                                 # (see vars.php for original form)
                                 echo substr($instructor_name, 3, 10);
                                 ?>
-                            </h3>
-                            <h3 class="unbolded">
+                            </h4>
+                            <h4 class="unbolded">
                                 <?php
                                 # Upcase the string
                                 # (see vars.php for original form)
                                 echo ucwords($university_name)
                                 ?>
-                            </h3>
+                            </h4>
                         </div>
                         <div class="header-section-inner-box-right text-center minimal-padding">
-                            <h3 >
+                            <h4>
                                 <?php
                                 # Remove middle name from display
                                 # (see vars.php for original form)
                                 echo str_replace(" David ", " ", $user_name);
                                 ?>
-                            </h3>
-                            <h3 class="unbolded">
+                            </h4>
+                            <h4 class="unbolded">
                                 <?php
                                 # Create mailto link for email
                                 $mailto_link = "mailto:" . $user_email;
@@ -102,8 +102,8 @@ This is the home page for the site.
                                 echo "<a href='$mailto_link'>$user_email</a>"
 
                                 ?>
-                            </h3>
-                            <h3>
+                            </h4>
+                            <h4>
                                 <span>Last Modified:</span>
                                 <span class="unbolded">
                                     <?php
@@ -113,7 +113,7 @@ This is the home page for the site.
                                     echo date("H:i M d, Y T", getlastmod());
                                     ?>
                                 </span>
-                            </h3>
+                            </h4>
                         </div>
                     </div>
                 </div>

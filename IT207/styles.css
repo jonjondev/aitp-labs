@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     font-size: 130%;
     margin: 10px;
-    word-wrap: break-word;
+    overflow-x: hidden;
 }
 
 ul {
@@ -37,7 +37,7 @@ a {
 }
 
 .col {
-    height: 95vh;
+    min-height: 95vh;
 }
 
 .col-container {
@@ -54,7 +54,7 @@ a {
 .col-right {
     flex: 1 1 auto;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
 }
 
 .header-section {
@@ -66,28 +66,31 @@ a {
     margin: 10px;
     border: 1px solid black;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 }
 
 .header-section-inner-box-left {
-    flex: 0 0 50%;
+    flex: 1 1 auto;
     border-right: 1px solid black;
 }
 
 .header-section-inner-box-right {
-    flex: 0 0 50%;
+    flex: 1 1 auto;
 }
 
 .body-section {
     flex: 1 1 auto;
     width: 100%;
+    padding: 10px;
     display: flex;
 }
 
-.body-content {
+.body-section-content {
+    flex-flow: row wrap;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 20px;
     width: 100%;
-    text-align: center;
-    align-self: center;
 }
 
 .footer-section {
