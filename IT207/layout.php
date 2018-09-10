@@ -16,10 +16,7 @@ The site layout, which loads content from a folder specified by the calling page
         # Check if current environment is production
         if ($_SERVER['HTTP_HOST'] != "localhost:3000") {
             # Simplify directory address for production
-            $current_relative_dir = ".";
-        }
-        if ($page_name != ".") {
-            $current_relative_dir = "..";
+            $current_relative_dir = $page_name != "." ? ".." : ".";
         }
         # Link to stylesheet based on env
         echo "<link rel='stylesheet' href='$current_relative_dir/styles.css' />";
