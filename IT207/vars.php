@@ -1,3 +1,9 @@
+<!--
+vars.php
+Jonathan Moallem 09/09/2018
+
+This contains a number of useful user-defined variables for the application.
+-->
 <?php
 # Defines application variables
 $course_number = "IT207";
