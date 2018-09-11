@@ -18,11 +18,16 @@ ul li {
     margin-bottom: 0 auto !important;
 }
 
-ul ul {
+ul li.sub-point {
+    list-style-type: none;
+}
+
+ul li ul {
+    margin: 0 auto !important;
     font-size: 15px;
 }
 
-ul ul li {
+ul li ul li {
     margin: 0 auto !important;
 }
 
