@@ -120,17 +120,18 @@ The site layout, which loads content from a folder specified by the calling page
                 <div class="body-section">
                     <div class="body-section-content">
                         <?php
+                        # Display the selected page content
                         include("$page_name/content.php");
                         ?>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3 class="text-center">
+                    <h4 class="text-center">
                         <?php
                         # Display copyright text
                         echo $copyright
                         ?>
-                    </h3>
+                    </h4>
                 </div>
             </div>
         </div>
