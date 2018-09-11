@@ -125,14 +125,10 @@ The site layout, which loads content from a folder specified by the calling page
                         ?>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h4 class="text-center">
-                        <?php
-                        # Display copyright text
-                        echo $copyright
-                        ?>
-                    </h4>
-                </div>
+                <?php
+                # Display the content footer
+                require("$current_relative_dir/layouts/footer.php");
+                ?>
             </div>
         </div>
     </body>
