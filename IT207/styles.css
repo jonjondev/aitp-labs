@@ -9,8 +9,29 @@ ul {
     padding-left: 18px;
 }
 
+ul li {
+    padding-left: 18px;
+    margin-bottom: 0 auto !important;
+}
+
+ul ul {
+    font-size: 15px;
+}
+
+ul ul li {
+    margin: 0 auto !important;
+}
+
 a {
     color: black;
+}
+
+.fluid-text a {
+    margin: 0 auto;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .text-center {
@@ -85,10 +106,9 @@ a {
 }
 
 .body-section-content {
+    display: flex;
     flex-flow: row wrap;
     border: 1px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
     margin: 10px;
     width: 100%;
 }
@@ -97,3 +117,49 @@ a {
     border-top: 5px solid black;
     width: 100%;
 }
+
+
+
+
+
+
+/* Index Section Styles */
+
+.index-left-col {
+    flex: 1 0 250px;
+    display: flex;
+    flex-flow: column wrap;
+    border-right: 1px solid black;
+}
+
+.index-photo-section {
+    flex: 1 0 auto;
+    background: url("./images/me.jpg");
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid black;
+    min-height: 300px;
+}
+
+.index-summary-section {
+    flex: 1 1 auto;
+}
+
+.index-right-col {
+    flex: 1 1 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
