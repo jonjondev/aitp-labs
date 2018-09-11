@@ -3,6 +3,8 @@ body {
     font-size: 130%;
     margin: 10px;
     overflow-x: hidden;
+    background-color: wheat;
+    color: #5B5342;
 }
 
 ul {
@@ -23,7 +25,7 @@ ul ul li {
 }
 
 a {
-    color: black;
+    color: #5B5342;
 }
 
 .fluid-text a {
@@ -55,12 +57,12 @@ a {
 .col-container {
     display: flex;
     flex-flow: row wrap;
-    border: 5px solid black;
+    border: 5px solid #5B5342;
 }
 
 .col-left {
     flex: 1 0 auto;
-    border-right: 5px solid black;
+    border-right: 5px solid #5B5342;
     display: flex;
     justify-content: center;
 }
@@ -79,20 +81,20 @@ a {
 }
 
 .header-section {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #5B5342;
     width: 100%;
 }
 
 .header-section-inner-box {
     margin: 10px;
-    border: 1px solid black;
+    border: 1px solid #5B5342;
     display: flex;
     flex-flow: row wrap;
 }
 
 .header-section-inner-box-left {
     flex: 1 1 auto;
-    border-right: 1px solid black;
+    border-right: 1px solid #5B5342;
 }
 
 .header-section-inner-box-right {
@@ -108,13 +110,13 @@ a {
 .body-section-content {
     display: flex;
     flex-flow: row wrap;
-    border: 1px solid black;
+    border: 1px solid #5B5342;
     margin: 10px;
     width: 100%;
 }
 
 .footer-section {
-    border-top: 5px solid black;
+    border-top: 5px solid #5B5342;
     width: 100%;
 }
 
@@ -129,16 +131,17 @@ a {
     flex: 1 0 250px;
     display: flex;
     flex-flow: column wrap;
-    border-right: 1px solid black;
+    border-right: 1px solid #5B5342;
 }
 
 .index-photo-section {
     flex: 1 0 auto;
-    background: url("./images/me.jpg");
+    background: url("../images/me.jpg");
     background-position: center;
     background-size: cover;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #5B5342;
     min-height: 300px;
+    filter: sepia(0.7);
 }
 
 .index-summary-section {
