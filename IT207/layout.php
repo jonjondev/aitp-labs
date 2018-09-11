@@ -28,32 +28,10 @@ The site layout, which loads content from a folder specified by the calling page
     </head>
     <body>
         <div class="col-container">
-            <div class="col-left">
-                <div class="col-left-content">
-                    <br />
-                    <h3 class="no-line-height">Lab Assignments</h3>
-                    <ul>
-                        <?php
-                        # Display four assignment links from a loop
-                        for ($i = 1; $i <= 4; $i++) {
-                            # Make item display inside <li></li> tags
-                            echo list_itemify("<a href='./LAB$i'>Assignment $i</a>");
-                        }
-                        ?>
-                    </ul>
-                    <br />
-                    <h3 class="no-line-height">Lab Practica</h3>
-                    <ul>
-                        <?php
-                        # Display two practicum links from a loop
-                        for ($i = 1; $i <= 2; $i++) {
-                            # Make item display inside <li></li> tags
-                            echo list_itemify("<a href='./LABP$i'>Practicum $i</a>");
-                        }
-                        ?>
-                    </ul>
-                </div>
-            </div>
+            <?php
+            # Display the content sidebar
+            require("$current_relative_dir/layouts/sidebar.php");
+            ?>
             <div class="col-right">
                 <?php
                 # Display the content header
