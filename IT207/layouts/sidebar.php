@@ -7,6 +7,10 @@ An include containing the layout sidebar content.
 <div class="col-left">
     <div class="col-left-content">
         <br />
+        <div class="text-center">
+            <a href='./'>Home</a>
+        </div>
+        <br />
         <h3 class="no-line-height">Lab Assignments</h3>
         <ul>
             <?php
