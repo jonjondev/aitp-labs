@@ -8,11 +8,15 @@ The site layout, which loads content from a folder specified by the calling page
          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Not A Real Webpage</title>
+        <title>
+            <?php
+            echo $page_title;
+            ?>
+        </title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <?php
         # Set default relative directory for testing
-        $current_relative_dir = $page_name != "." ? ".." : ".";
+        $current_relative_dir = $page_name != "./home.php" ? ".." : ".";
         # Check if current environment is production
         $prod = $_SERVER['HTTP_HOST'] != "localhost:3000";
         # Link to stylesheet based on env
@@ -38,7 +42,7 @@ The site layout, which loads content from a folder specified by the calling page
                     <div class="body-section-content">
                         <?php
                         # Display the selected page content
-                        include("$page_name/content.php");
+                        include("$page_name");
                         ?>
                     </div>
                 </div>
