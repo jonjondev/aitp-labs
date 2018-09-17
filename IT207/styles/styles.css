@@ -163,9 +163,12 @@ a {
 
 
 
+/* Lab1 Section Styles */
 
-
-
+.lab1-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 
 
