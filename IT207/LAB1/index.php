@@ -7,5 +7,6 @@ The page definition for the LAB1 page. Calls the layout, and tells it to load th
 <?php
 $page_title = "IT 207 Final Grade Determiner";
 $page_name = "./index_content.php";
+$css_path = "/LAB1/styles.css";
 include("../layout.php");
 ?>

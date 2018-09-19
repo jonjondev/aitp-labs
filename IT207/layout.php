@@ -19,8 +19,9 @@ The site layout, which loads content from a folder specified by the calling page
         $current_relative_dir = $page_name != "./home.php" ? ".." : ".";
         # Check if current environment is production
         $prod = $_SERVER['HTTP_HOST'] != "localhost:3000";
-        # Link to stylesheet based on env
-        echo "<link rel='stylesheet' href='", $prod ? $current_relative_dir : ".", "/styles/styles.css' />";
+        # Link to stylesheets based on env
+        echo "<link rel='stylesheet' href='", $prod ? $current_relative_dir : ".", "/layout/styles.css' />";
+        echo "<link rel='stylesheet' href='", $prod ? $current_relative_dir : ".", $css_path, "' />";
         # Requires a file that defines a number of variables
         require 'vars.php';
         # Requires a file that defines a number of user-defined functions
@@ -31,12 +32,12 @@ The site layout, which loads content from a folder specified by the calling page
         <div class="col-container">
             <?php
             # Display the content sidebar
-            require("$current_relative_dir/layouts/sidebar.php");
+            require("$current_relative_dir/layout/sidebar.php");
             ?>
             <div class="col-right">
                 <?php
                 # Display the content header
-                require("$current_relative_dir/layouts/header.php");
+                require("$current_relative_dir/layout/header.php");
                 ?>
                 <div class="body-section">
                     <div class="body-section-content">
@@ -48,7 +49,7 @@ The site layout, which loads content from a folder specified by the calling page
                 </div>
                 <?php
                 # Display the content footer
-                require("$current_relative_dir/layouts/footer.php");
+                require("$current_relative_dir/layout/footer.php");
                 ?>
             </div>
         </div>

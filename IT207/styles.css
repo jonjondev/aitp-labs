@@ -1,0 +1,26 @@
+/* Home Section Styles */
+
+.index-left-col {
+    flex: 1 0 250px;
+    display: flex;
+    flex-flow: column wrap;
+    border-right: 1px solid #5B5342;
+}
+
+.index-photo-section {
+    flex: 1 0 auto;
+    background: url("./images/me.jpg");
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #5B5342;
+    min-height: 300px;
+    filter: sepia(0.7);
+}
+
+.index-summary-section {
+    flex: 1 1 auto;
+}
+
+.index-right-col {
+    flex: 1 1 250px;
+}
