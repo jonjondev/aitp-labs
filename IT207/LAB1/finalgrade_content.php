@@ -5,7 +5,7 @@
     }
 
     function get_weighted_percentage($percentage, $weight) {
-        return ($weight * $percentage);
+        return ($weight * $percentage) / 100;
     }
 
     $participation_percentage = get_percentage(
