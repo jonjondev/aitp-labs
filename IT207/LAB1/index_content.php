@@ -1,12 +1,14 @@
 <!--
-content.php
+index_content.php
 Jonathan Moallem 09/09/2018
 
 The LAB1 page content. For being called and displayed by a layout.
 -->
 <title>IT 207 Final Grade Determiner</title>
 <div class="lab1-container">
-    <form action="finalgrade.php" method="post">
+    <?php
+        echo "<form action='$relative_base_link/LAB1/finalgrade.php' method='post'>";
+    ?>
         <h3>Participation</h3>
         Earned: <input type="text" name="earnedParticipation" />
         Max: <input type="text" name="maxParticipation" />

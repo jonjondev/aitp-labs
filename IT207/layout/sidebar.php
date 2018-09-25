@@ -10,7 +10,7 @@ An include containing the layout sidebar content.
         <br />
         <div class="text-center">
             <?php
-                echo "<a href='$relative_base_link/'>Home</a>";
+                echo "<a href='$current_relative_dir/'>Home</a>";
             ?>
         </div>
         <br />
@@ -20,7 +20,7 @@ An include containing the layout sidebar content.
             # Display four assignment links from a loop
             for ($i = 1; $i <= 4; $i++) {
                 # Make item display inside <li></li> tags
-                echo list_itemify("<a href='$relative_base_link/LAB$i'>Assignment $i</a>");
+                echo list_itemify("<a href='$current_relative_dir/LAB$i'>Assignment $i</a>");
             }
             ?>
         </ul>

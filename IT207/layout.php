@@ -15,15 +15,9 @@ The site layout, which loads content from a folder specified by the calling page
         </title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <?php
-        # Set default relative directory for testing
-        $current_relative_dir = $page_name != "./home.php" ? ".." : ".";
-        # Check if current environment is production
-        $prod = $_SERVER['HTTP_HOST'] != "localhost:3000";
-        # Determine the relevant base for the link
-        $relative_base_link = $prod ? $current_relative_dir : ".";
-        # Link to stylesheets based on env
-        echo "<link rel='stylesheet' href='", $relative_base_link, "/layout/styles.css' />";
-        echo "<link rel='stylesheet' href='", $relative_base_link, $css_path, "' />";
+        # Link to stylesheets
+        echo "<link rel='stylesheet' href='", $current_relative_dir, "/layout/styles.css' />";
+        echo "<link rel='stylesheet' href='", $current_relative_dir, $css_path, "' />";
         # Requires a file that defines a number of variables
         require 'vars.php';
         # Requires a file that defines a number of user-defined functions

@@ -8,5 +8,6 @@ The page definition for the home page. Calls the layout, and tells it to load th
 $page_title = "Not A Real Webpage";
 $page_name = "./home.php";
 $css_path = "/styles.css";
+$current_relative_dir = ".";
 include("./layout.php");
 ?>
