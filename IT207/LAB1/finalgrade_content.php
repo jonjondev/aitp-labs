@@ -32,7 +32,7 @@
         $_POST['weightPracticum']);
     echo "<p>You earned a ", round($practicum_percentage, 2),"% for the Practica, with a weighted value of ", round($practicum_weighted, 2), "%</p>";
 
-    $summed_marks = $participation_percentage + $quiz_percentage + $lab_percentage + $practicum_percentage;
+    $summed_marks = $participation_weighted + $quiz_weighted + $lab_weighted + $practicum_weighted;
 
     $letter_grade = $summed_marks >= 60 ? "D" : "F";
     $letter_grade = $summed_marks >= 70 ? "C" : $letter_grade;
