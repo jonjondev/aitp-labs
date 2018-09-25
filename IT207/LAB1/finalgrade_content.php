@@ -3,10 +3,22 @@
     define('DECIMAL_PLACES', 2);
     define('PERCENT_DIVISOR', 100);
 
+    /* 
+    * Gets the percentage based on two values.
+    * @param - $earned: Integer | Float - the value of the mark earned
+    * @param - $maximum: Integer | Float - the maximum value
+    * @return - the percentage: Integer | Float
+    */
     function get_percentage($earned, $maximum) {
         return ($earned / $maximum) * PERCENT_DIVISOR;
     }
 
+    /* 
+    * Gets the weighted percentage based on two percentage values.
+    * @param - $percentage: Integer | Float - the earned percentage out of 100
+    * @param - $weight: Integer | Float - the total weighting for the percentage
+    * @return - the weighted percentage: Integer | Float
+    */
     function get_weighted_percentage($percentage, $weight) {
         return ($weight * $percentage) / PERCENT_DIVISOR;
     }
