@@ -4,11 +4,14 @@ Jonathan Moallem 09/11/2018
 
 An include containing the layout sidebar content.
 -->
+
 <div class="col-left">
     <div class="col-left-content">
         <br />
         <div class="text-center">
-            <a href='./'>Home</a>
+            <?php
+                echo "<a href='$relative_base_link/'>Home</a>";
+            ?>
         </div>
         <br />
         <h3 class="no-line-height">Lab Assignments</h3>
@@ -17,7 +20,7 @@ An include containing the layout sidebar content.
             # Display four assignment links from a loop
             for ($i = 1; $i <= 4; $i++) {
                 # Make item display inside <li></li> tags
-                echo list_itemify("<a href='./LAB$i'>Assignment $i</a>");
+                echo list_itemify("<a href='$relative_base_link/LAB$i'>Assignment $i</a>");
             }
             ?>
         </ul>
