@@ -4,7 +4,6 @@ Jonathan Moallem 09/09/2018
 
 The LAB1 page content. For being called and displayed by a layout.
 -->
-<title>IT 207 Final Grade Determiner</title>
 <div class="lab1-container">
     <?php
         echo "<form action='./finalgrade.php' method='post'>";
