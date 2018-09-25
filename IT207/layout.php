@@ -17,7 +17,7 @@ The site layout, which loads content from a folder specified by the calling page
         <?php
         # Link to stylesheets
         echo "<link rel='stylesheet' href='", $current_relative_dir, "/layout/styles.css' />";
-        echo "<link rel='stylesheet' href='", $current_relative_dir, $css_path, "' />";
+        echo "<link rel='stylesheet' href='", $css_path, "' />";
         # Requires a file that defines a number of variables
         require 'vars.php';
         # Requires a file that defines a number of user-defined functions
