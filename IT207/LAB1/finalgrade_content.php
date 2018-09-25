@@ -42,6 +42,6 @@
     $letter_grade = $summed_marks >= 90 ? "A" : $letter_grade;
     $letter_grade = $summed_marks >= 95 ? "A+" : $letter_grade;
 
-    echo "<p class='bolded'>Your final grade is a ", round($summed_marks, 2),"%, which is a ", $letter_grade;
+    echo "<p class='bolded'>Your final grade is a ", round($summed_marks, 2),"%, which is a ", $letter_grade, ".";
     ?>
 </div>
