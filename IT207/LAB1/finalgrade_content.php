@@ -53,6 +53,6 @@
     $letter_grade = $summed_marks >= A_GRADE ? "A" : $letter_grade;
     $letter_grade = $summed_marks >= Ap_GRADE ? "A+" : $letter_grade;
 
-    echo "<p class='bolded'>Your final grade is a ", round($summed_marks, DECIMAL_PLACES),"%, which is a ", $letter_grade, ".";
+    echo "<p class='bolded'>Your final grade is a ", round($summed_marks, DECIMAL_PLACES),"%, which is a ", $letter_grade, ".</p>";
     ?>
 </div>
