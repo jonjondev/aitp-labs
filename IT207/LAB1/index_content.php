@@ -35,6 +35,7 @@ The LAB1 page content. For being called and displayed by a layout.
         <div>
             <br /><br />
             <input type="submit" />
+            <br />
         </div>
     </form>
 </div>
