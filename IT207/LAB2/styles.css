@@ -40,5 +40,10 @@
 
 .lab2-date-box-inner {
     margin: 1px;
+    min-height: 150px;
     background-color: rgba(0,0,0,0.2);
+}
+
+.appointment-controls {
+    padding-left: 10px;
 }

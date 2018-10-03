@@ -4,9 +4,9 @@ Jonathan Moallem 09/09/2018
 
 The LAB2 page content. For being called and displayed by a layout.
 -->
-<div class="lab2-container">
+<div class="lab2-container text-center">
     <div class="lab2-cal-header">
-        <h2 class="title-text">Student Hours Signup</h2>
+        <h1 class="title-text">Student Hours Signup</h1>
         <form action='./meme.php' method='post'>
             <div>
                 <span>Student Name:</span> <input type="text" name="studentName" />
@@ -80,6 +80,13 @@ The LAB2 page content. For being called and displayed by a layout.
         <div class="lab2-date-box">
             <div class="lab2-date-box-inner">
                 <p class="date-text">8</p>
+                <div class="appointment-controls">
+                    <input type="checkbox" name="hi" />
+                    <label for="hi">7:00am</label>
+                    <br />
+                    <span>7:30am - Jon</span>
+                    <br />
+                </div>
             </div>
         </div>
         <div class="lab2-date-box">
@@ -180,6 +187,14 @@ The LAB2 page content. For being called and displayed by a layout.
         <div class="lab2-date-box">
             <div class="lab2-date-box-inner">
                 <p class="date-text">28</p>
+                <div class="appointment-controls">
+                    <input type="checkbox" name="hi" />
+                    <label for="hi">7:00am</label>
+                    <br />
+                    <input type="checkbox" name="hi" />
+                    <label for="hi">7:30am</label>
+                    <br />
+                </div>
             </div>
         </div>
         <div class="lab2-date-box">
