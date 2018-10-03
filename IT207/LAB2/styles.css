@@ -45,5 +45,9 @@
 }
 
 .appointment-controls {
-    padding-left: 10px;
+    font-size: 12px;
+}
+
+.appointment-text {
+    padding-left: 3px;
 }

@@ -84,7 +84,7 @@ The LAB2 page content. For being called and displayed by a layout.
                     <input type="checkbox" name="hi" />
                     <label for="hi">7:00am</label>
                     <br />
-                    <span>7:30am - Jon</span>
+                    <span class="appointment-text">7:30am - Jon</span>
                     <br />
                 </div>
             </div>
