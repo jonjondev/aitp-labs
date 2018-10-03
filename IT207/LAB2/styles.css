@@ -7,12 +7,7 @@
 }
 
 .lab2-cal-header {
-    display: flex;
     text-align: center;
-}
-
-.lab2-cal-header * {
-    width: 100%;
 }
 
 .day-text {
