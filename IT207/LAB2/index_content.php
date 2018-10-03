@@ -6,7 +6,15 @@ The LAB2 page content. For being called and displayed by a layout.
 -->
 <div class="lab2-container">
     <div class="lab2-cal-header">
-        <h1 class="title-text">Student Hours Signup</h1>
+        <h2 class="title-text">Student Hours Signup</h2>
+        <form action='./meme.php' method='post'>
+            <div>
+                <span>Student Name:</span> <input type="text" name="studentName" />
+                <span>Student Email:</span> <input type="text" name="studentEmail" />
+                <input type="submit" />
+                <input type="submit" value="Clear" />
+            </div>
+        </form>
         <h4 class="title-text">February, 2015</h4>
     </div>
     <div class="lab2-day-boxes">
