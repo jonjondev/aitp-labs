@@ -4,7 +4,7 @@ Jonathan Moallem 09/09/2018
 
 The LAB2 page content. For being called and displayed by a layout.
 -->
-<div class="lab2-container text-center">
+<div class="lab2-container">
     <div class="lab2-cal-header">
         <h1 class="title-text">Student Hours Signup</h1>
         <form action='./meme.php' method='post'>
