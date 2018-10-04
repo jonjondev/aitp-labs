@@ -41,42 +41,7 @@ The LAB2 page content. For being called and displayed by a layout.
         </div>
     </div>
     <div class="lab2-date-boxes">
-        <div class="lab2-date-box"></div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">1</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">2</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">3</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">4</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">5</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">6</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">7</p>
-            </div>
-        </div>
+        <!-- <div class="lab2-date-box"></div>
         <div class="lab2-date-box">
             <div class="lab2-date-box-inner">
                 <p class="date-text">8</p>
@@ -88,129 +53,32 @@ The LAB2 page content. For being called and displayed by a layout.
                     <br />
                 </div>
             </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">9</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">10</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">11</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">12</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">13</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">14</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">15</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">16</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">17</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">18</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">19</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">20</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">21</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">22</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">23</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">24</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">25</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">26</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">27</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">28</p>
-                <div class="appointment-controls">
-                    <input type="checkbox" name="hi" />
-                    <label for="hi">7:00am</label>
-                    <br />
-                    <input type="checkbox" name="hi" />
-                    <label for="hi">7:30am</label>
-                    <br />
-                </div>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">29</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">30</p>
-            </div>
-        </div>
-        <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">31</p>
-            </div>
-        </div>
+        </div> -->
+        <?php
+        function make_date_box($date) {
+            echo "<div class='lab2-date-box'>
+                    <div class='lab2-date-box-inner'>
+                        <p class='date-text'>$date</p>
+                    </div>
+                </div>"
+        }
+
+        function make_blank_box($date) {
+            echo "<div class='lab2-date-box'>"
+        }
+
+
+        $number_of_days = date('t');
+        $first_day = date('01-m-Y');
+        $offset = date('w', strtotime($first_day));
+
+        for ($i = 0; $i < $offset; $i++) {
+            make_blank_box($i);
+        }
+
+        for ($i = 0; $i < $number_of_days; $i++) {
+            make_date_box($i);
+        }
+        ?>
     </div>
 </div>
