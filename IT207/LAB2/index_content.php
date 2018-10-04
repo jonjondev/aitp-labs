@@ -60,11 +60,11 @@ The LAB2 page content. For being called and displayed by a layout.
                     <div class='lab2-date-box-inner'>
                         <p class='date-text'>$date</p>
                     </div>
-                </div>"
+                </div>";
         }
 
         function make_blank_box($date) {
-            echo "<div class='lab2-date-box'>"
+            echo "<div class='lab2-date-box'>";
         }
 
 
