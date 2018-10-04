@@ -15,7 +15,11 @@ The LAB2 page content. For being called and displayed by a layout.
                 <input type="submit" value="Clear" />
             </div>
         </form>
-        <h4 class="title-text">February, 2015</h4>
+        <h4 class="title-text">
+            <?php
+            echo date('F, Y')
+            ?>
+        </h4>
     </div>
     <div class="lab2-day-boxes">
         <div class="lab2-day-box">
@@ -41,8 +45,7 @@ The LAB2 page content. For being called and displayed by a layout.
         </div>
     </div>
     <div class="lab2-date-boxes">
-        <!-- <div class="lab2-date-box"></div>
-        <div class="lab2-date-box">
+        <!-- <div class="lab2-date-box">
             <div class="lab2-date-box-inner">
                 <p class="date-text">8</p>
                 <div class="appointment-controls">
@@ -55,10 +58,22 @@ The LAB2 page content. For being called and displayed by a layout.
             </div>
         </div> -->
         <?php
+        function get_appointment_controls() {
+            return "<div class='appointment-controls'>
+                        <input type='checkbox' name='time' />
+                        <label for='time'>7:00am</label>
+                        <br />
+                        <span class='appointment-text'>7:30am - Jon</span>
+                        <br />
+                    </div>";
+        }
+
         function make_date_box($date) {
+            $appointment_controls = get_appointment_controls();
             echo "<div class='lab2-date-box'>
                     <div class='lab2-date-box-inner'>
                         <p class='date-text'>$date</p>
+                        $appointment_controls
                     </div>
                 </div>";
         }
@@ -66,7 +81,6 @@ The LAB2 page content. For being called and displayed by a layout.
         function make_blank_box() {
             echo "<div class='lab2-date-box'></div>";
         }
-
 
         $number_of_days = date('t');
         $first_day = date('01-m-Y');
@@ -76,7 +90,7 @@ The LAB2 page content. For being called and displayed by a layout.
             make_blank_box();
         }
 
-        for ($i = 1; $i < $number_of_days; $i++) {
+        for ($i = 1; $i <= $number_of_days; $i++) {
             make_date_box($i);
         }
         ?>
