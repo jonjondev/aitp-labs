@@ -45,18 +45,6 @@ The LAB2 page content. For being called and displayed by a layout.
         </div>
     </div>
     <div class="lab2-date-boxes">
-        <!-- <div class="lab2-date-box">
-            <div class="lab2-date-box-inner">
-                <p class="date-text">8</p>
-                <div class="appointment-controls">
-                    <input type="checkbox" name="hi" />
-                    <label for="hi">7:00am</label>
-                    <br />
-                    <span class="appointment-text">7:30am - Jon</span>
-                    <br />
-                </div>
-            </div>
-        </div> -->
         <?php
         function get_appointment_controls() {
             return "<div class='appointment-controls'>
