@@ -46,7 +46,8 @@
 }
 
 .appointment-controls {
-    font-size: 12px;
+    font-size: 15px;
+    margin-left: 3px;
 }
 
 .appointment-text {
