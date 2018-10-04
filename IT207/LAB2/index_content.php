@@ -1,6 +1,6 @@
 <!--
 index_content.php
-Jonathan Moallem 09/09/2018
+Jonathan Moallem 10/03/2018
 
 The LAB2 page content. For being called and displayed by a layout.
 -->
