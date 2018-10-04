@@ -63,8 +63,8 @@ The LAB2 page content. For being called and displayed by a layout.
                 </div>";
         }
 
-        function make_blank_box($date) {
-            echo "<div class='lab2-date-box'>";
+        function make_blank_box() {
+            echo "<div class='lab2-date-box'></div>";
         }
 
 
@@ -73,10 +73,10 @@ The LAB2 page content. For being called and displayed by a layout.
         $offset = date('w', strtotime($first_day));
 
         for ($i = 0; $i < $offset; $i++) {
-            make_blank_box($i);
+            make_blank_box();
         }
 
-        for ($i = 0; $i < $number_of_days; $i++) {
+        for ($i = 1; $i < $number_of_days; $i++) {
             make_date_box($i);
         }
         ?>
