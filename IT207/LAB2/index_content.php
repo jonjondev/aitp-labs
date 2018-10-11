@@ -10,9 +10,6 @@ The LAB2 setup page content. For being called and displayed by a layout.
     </div>
     <div class="lab2-day-boxes">
         <div class="lab2-time-box">
-            <p class="day-text">Day:</p>
-        </div>
-        <div class="lab2-time-box">
             <p class="day-text">Monday</p>
         </div>
         <div class="lab2-time-box">
@@ -29,11 +26,6 @@ The LAB2 setup page content. For being called and displayed by a layout.
         </div>
     </div>
     <div class="lab2-date-boxes">
-        <div class='lab2-time-box'>
-            <div class='lab2-date-box-inner'>
-                <p>Time:</p>
-            </div>
-        </div>
         <div class='lab2-time-box'>
             <div class='lab2-date-box-inner'>
                 <p>Time:</p>
