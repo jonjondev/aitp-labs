@@ -6,7 +6,7 @@ The LAB2 setup page content. For being called and displayed by a layout.
 -->
 <?php
 function get_time_select_box() {
-    echo "<select multiple>
+    echo "<select multiple class='lab2-time-select'>
             <option value='07:00'>7:00am</option>
             <option value='07:30'>7:30am</option>
             <option value='08:00'>7:00am</option>
@@ -67,12 +67,9 @@ function get_time_select_box() {
     <div class="lab2-date-boxes">
         <div class='lab2-time-box'>
             <div class='lab2-date-box-inner'>
-                <select multiple>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                </select>
+                <?php
+                get_time_select_box();
+                ?>
             </div>
         </div>
         <div class='lab2-time-box'>
