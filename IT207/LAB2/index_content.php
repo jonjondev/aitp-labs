@@ -2,7 +2,7 @@
 index_content.php
 Jonathan Moallem 10/03/2018
 
-The LAB2 page content. For being called and displayed by a layout.
+The LAB2 setup page content. For being called and displayed by a layout.
 -->
 <div class="lab2-container">
     <div class="lab2-cal-header">

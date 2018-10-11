@@ -1,6 +1,6 @@
 <!--
 calendar.php
-Jonathan Moallem 10/03/2018
+Jonathan Moallem 10/11/2018
 
 The page definition for the LAB2 calendar page. Calls the layout, and tells it to load the LAB2 calendar page content.
 -->

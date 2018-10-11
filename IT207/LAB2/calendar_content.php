@@ -1,6 +1,6 @@
 <!--
 calendar_content.php
-Jonathan Moallem 10/03/2018
+Jonathan Moallem 10/11/2018
 
 The LAB2 calendar page content. For being called and displayed by a layout.
 -->
