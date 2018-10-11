@@ -10,7 +10,7 @@ The LAB2 setup page content. For being called and displayed by a layout.
     </div>
     <div class="lab2-day-boxes">
         <div class="lab2-day-box">
-            <p class="day-text">Day:</p>
+            <p class="day-text"><b>Day:</b></p>
         </div>
         <div class="lab2-day-box">
             <p class="day-text">Monday</p>
@@ -30,8 +30,8 @@ The LAB2 setup page content. For being called and displayed by a layout.
     </div>
     <div class="lab2-date-boxes">
         <div class='lab2-date-box'>
-            <div class='lab2-date-box-inner'>
-                <p>Time:</p>
+            <div class='lab2-date-box-inner text-center'>
+                <b>Time:</b>
             </div>
         </div>
         <div class='lab2-date-box'>
@@ -60,7 +60,7 @@ The LAB2 setup page content. For being called and displayed by a layout.
             </div>
         </div>
     </div>
-    <form action='./calendar.php' method='post'>
+    <form action='./calendar.php' method='post' class="text-center">
         <div>
             <input type="submit" value="Clear" />
             <input type="submit" />

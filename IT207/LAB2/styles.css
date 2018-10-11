@@ -1,4 +1,4 @@
-/* Lab2 Section Styles */
+/* Calendar Page Styles */
 
 .lab2-container {
     width: 100%;
@@ -52,4 +52,12 @@
 
 .appointment-text {
     padding-left: 3px;
+}
+
+
+
+/* Index Page Styles */
+
+.lab2-time-box {
+    flex: 0 0 calc(100% / 6);
 }
