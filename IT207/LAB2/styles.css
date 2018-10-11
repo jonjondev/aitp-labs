@@ -62,7 +62,7 @@
     flex: 0 0 calc(100% / 5);
 }
 
-.lab2-time-select {
+select.lab2-time-select {
     margin-left: 25%;
     margin-top: 20px;
     width: 50%;
