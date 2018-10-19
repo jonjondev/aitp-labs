@@ -31,7 +31,7 @@ An include containing the layout sidebar content.
             # Display two practicum links from a loop
             for ($i = 1; $i <= 2; $i++) {
                 # Make item display inside <li></li> tags
-                echo list_itemify("<a href='./LABP$i'>Practicum $i</a>");
+                echo list_itemify("<a href='$current_relative_dir/LABP$i'>Practicum $i</a>");
             }
             ?>
         </ul>
