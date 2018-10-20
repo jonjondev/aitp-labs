@@ -5,8 +5,8 @@ Jonathan Moallem 10/03/2018
 The LAB2 setup page content. For being called and displayed by a layout.
 -->
 <?php
-function get_time_select_box() {
-    echo "<select multiple class='lab2-time-select'>
+function get_time_select_box($day_index) {
+    echo "<select multiple class='lab2-time-select' name='day_{$day_index}[]'>
             <option value='07:00'>7:00am</option>
             <option value='07:30'>7:30am</option>
             <option value='08:00'>7:00am</option>
@@ -64,45 +64,45 @@ function get_time_select_box() {
             <p class="day-text">Friday</p>
         </div>
     </div>
-    <div class="lab2-date-boxes">
-        <div class='lab2-time-box'>
-            <div class='lab2-date-box-inner'>
-                <?php
-                get_time_select_box();
-                ?>
+    <form action='./calendar.php' method='post'>
+        <div class="lab2-date-boxes">
+            <div class='lab2-time-box'>
+                <div class='lab2-date-box-inner'>
+                    <?php
+                    get_time_select_box(1);
+                    ?>
+                </div>
+            </div>
+            <div class='lab2-time-box'>
+                <div class='lab2-date-box-inner'>
+                    <?php
+                    get_time_select_box(2);
+                    ?>
+                </div>
+            </div>
+            <div class='lab2-time-box'>
+                <div class='lab2-date-box-inner'>
+                    <?php
+                    get_time_select_box(3);
+                    ?>
+                </div>
+            </div>
+            <div class='lab2-time-box'>
+                <div class='lab2-date-box-inner'>
+                    <?php
+                    get_time_select_box(4);
+                    ?>
+                </div>
+            </div>
+            <div class='lab2-time-box'>
+                <div class='lab2-date-box-inner'>
+                    <?php
+                    get_time_select_box(5);
+                    ?>
+                </div>
             </div>
         </div>
-        <div class='lab2-time-box'>
-            <div class='lab2-date-box-inner'>
-                <?php
-                get_time_select_box();
-                ?>
-            </div>
-        </div>
-        <div class='lab2-time-box'>
-            <div class='lab2-date-box-inner'>
-                <?php
-                get_time_select_box();
-                ?>
-            </div>
-        </div>
-        <div class='lab2-time-box'>
-            <div class='lab2-date-box-inner'>
-                <?php
-                get_time_select_box();
-                ?>
-            </div>
-        </div>
-        <div class='lab2-time-box'>
-            <div class='lab2-date-box-inner'>
-                <?php
-                get_time_select_box();
-                ?>
-            </div>
-        </div>
-    </div>
-    <form action='./calendar.php' method='post' class="text-center">
-        <div>
+        <div class="text-center">
             <input type="submit" value="Clear" />
             <input type="submit" />
         </div>
