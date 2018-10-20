@@ -8,6 +8,16 @@ The LAB2 calendar page content. For being called and displayed by a layout.
 define('APPOINTMENTS_KEY', 'appointments');
 define('STUDENT_NAME_KEY', 'studentName');
 define('STUDENT_EMAIL_KEY', 'studentEmail');
+define('PROFESSOR_EMAIL_KEY', 'euyar@masonlive.gmu.edu');
+
+if ($_POST[STUDENT_EMAIL_KEY]) {
+    $student_name = $_POST[STUDENT_NAME_KEY];
+    $student_email = $_POST[STUDENT_EMAIL_KEY];
+    $body = "$student_name has booked appointments with you. Consult the office hours signup page for more information";
+    $headers = "From: $student_email";
+    $title = "New Appointment Booking: $student_name";
+    echo mail(PROFESSOR_EMAIL_KEY, $title, $body, $headers) ? "Email successfully sent from $student_email" : "There was an issue sending your email";
+}
 ?>
 <div class="lab2-container">
     <form action='./calendar.php' method='post'>
@@ -17,8 +27,8 @@ define('STUDENT_EMAIL_KEY', 'studentEmail');
                 <?php
                 $student_name_key = STUDENT_NAME_KEY;
                 $student_email_key = STUDENT_EMAIL_KEY;
-                echo "<span>Student Name:</span> <input type='text' name='studentName' />";
-                echo "<span>Student Email:</span> <input type='text' name='studentEmail' />";
+                echo "<span>Student Name:</span> <input type='text' name='$student_name_key' />";
+                echo "<span>Student Email:</span> <input type='text' name='$student_email_key' />";
                 ?>
                 <input type="submit" />
                 <input type="reset" value="Clear" />
@@ -62,7 +72,7 @@ define('STUDENT_EMAIL_KEY', 'studentEmail');
                         if ($_POST[APPOINTMENTS_KEY] && 
                             in_array($checkbox_value, $_POST[APPOINTMENTS_KEY])) {
                             
-                            $student = $_POST['studentName'];
+                            $student = $_POST[STUDENT_NAME_KEY];
                             $return_string .= "<span class='appointment-text'>
                                 $time - $student</span><br />";
                         }
