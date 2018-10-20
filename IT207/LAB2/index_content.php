@@ -77,7 +77,7 @@ function get_time_select_box($day_index) {
             ?>
         </div>
         <div class="text-center">
-            <input type="submit" value="Clear" />
+            <input type="reset" value="Clear" />
             <input type="submit" />
         </div>
     </form>

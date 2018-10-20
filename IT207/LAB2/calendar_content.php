@@ -21,7 +21,7 @@ define('STUDENT_EMAIL_KEY', 'studentEmail');
                 echo "<span>Student Email:</span> <input type='text' name='studentEmail' />";
                 ?>
                 <input type="submit" />
-                <input type="submit" value="Clear" />
+                <input type="reset" value="Clear" />
             </div>
             <h4 class="title-text">
                 <?php
