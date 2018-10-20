@@ -4,12 +4,19 @@ Jonathan Moallem 10/11/2018
 
 The LAB2 calendar page content. For being called and displayed by a layout.
 -->
+<?php
+define('APPOINTMENTS_KEY', 'appointments');
+define('STUDENT_NAME_KEY', 'studentName');
+define('STUDENT_EMAIL_KEY', 'studentEmail');
+?>
 <div class="lab2-container">
     <form action='./calendar.php' method='post'>
         <div class="lab2-cal-header">
             <h1 class="title-text">Student Hours Signup</h1>
             <div>
                 <?php
+                $student_name_key = STUDENT_NAME_KEY;
+                $student_email_key = STUDENT_EMAIL_KEY;
                 echo "<span>Student Name:</span> <input type='text' name='studentName' />";
                 echo "<span>Student Email:</span> <input type='text' name='studentEmail' />";
                 ?>
