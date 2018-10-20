@@ -66,41 +66,15 @@ function get_time_select_box($day_index) {
     </div>
     <form action='./calendar.php' method='post'>
         <div class="lab2-date-boxes">
-            <div class='lab2-time-box'>
-                <div class='lab2-date-box-inner'>
-                    <?php
-                    get_time_select_box(1);
-                    ?>
-                </div>
-            </div>
-            <div class='lab2-time-box'>
-                <div class='lab2-date-box-inner'>
-                    <?php
-                    get_time_select_box(2);
-                    ?>
-                </div>
-            </div>
-            <div class='lab2-time-box'>
-                <div class='lab2-date-box-inner'>
-                    <?php
-                    get_time_select_box(3);
-                    ?>
-                </div>
-            </div>
-            <div class='lab2-time-box'>
-                <div class='lab2-date-box-inner'>
-                    <?php
-                    get_time_select_box(4);
-                    ?>
-                </div>
-            </div>
-            <div class='lab2-time-box'>
-                <div class='lab2-date-box-inner'>
-                    <?php
-                    get_time_select_box(5);
-                    ?>
-                </div>
-            </div>
+            <?php
+            for ($i = 1; $i <= 5; $i++) {
+                echo "<div class='lab2-time-box'>
+                        <div class='lab2-date-box-inner'>";
+                            get_time_select_box($i);
+                echo    "</div>
+                      </div>";
+            }
+            ?>
         </div>
         <div class="text-center">
             <input type="submit" value="Clear" />
