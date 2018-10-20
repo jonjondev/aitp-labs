@@ -46,18 +46,29 @@ The LAB2 calendar page content. For being called and displayed by a layout.
     </div>
     <div class="lab2-date-boxes">
         <?php
-        function get_appointment_controls() {
-            return "<div class='appointment-controls'>
-                        <input type='checkbox' name='time' />
-                        <label for='time'>7:00am</label>
-                        <br />
-                        <span class='appointment-text'>7:30am - Jon</span>
-                        <br />
-                    </div>";
+        function get_appointment_controls($events) {
+            $return_string = "<div class='appointment-controls'>";
+            if ($events) {
+                foreach ($events as $time) {
+                    $return_string .= "<input type='checkbox' name='time' />
+                        <label for='time'>$time</label>
+                        <br />";
+                }
+            }
+            $return_string .= "</div>";
+            return $return_string;
+
+            // return "<div class='appointment-controls'>
+            //             <input type='checkbox' name='time' />
+            //             <label for='time'>7:00am</label>
+            //             <br />
+            //             <span class='appointment-text'>7:30am - Jon</span>
+            //             <br />
+            //         </div>";
         }
 
-        function make_date_box($date) {
-            $appointment_controls = get_appointment_controls();
+        function make_date_box($date, $events) {
+            $appointment_controls = get_appointment_controls($events);
             echo "<div class='lab2-date-box'>
                     <div class='lab2-date-box-inner'>
                         <p class='date-text'>$date</p>
@@ -79,7 +90,9 @@ The LAB2 calendar page content. For being called and displayed by a layout.
         }
 
         for ($i = 1; $i <= $number_of_days; $i++) {
-            make_date_box($i);
+            $current_day = date("$i-m-Y");
+            $week_day = date('w', strtotime($current_day));
+            make_date_box($i, $_POST["day_$week_day"]);
         }
         ?>
     </div>
