@@ -10,9 +10,13 @@ define('STUDENT_NAME_KEY', 'studentName');
 define('STUDENT_EMAIL_KEY', 'studentEmail');
 define('PROFESSOR_EMAIL_KEY', 'euyar@masonlive.gmu.edu');
 
-if ($_POST[STUDENT_EMAIL_KEY]) {
-    $student_name = $_POST[STUDENT_NAME_KEY];
-    $student_email = $_POST[STUDENT_EMAIL_KEY];
+$appointments_key = APPOINTMENTS_KEY;
+$student_name_key = STUDENT_NAME_KEY;
+$student_email_key = STUDENT_EMAIL_KEY;
+
+if ($_POST[$student_email_key]) {
+    $student_name = $_POST[$student_name_key];
+    $student_email = $_POST[$student_email_key];
     $body = "$student_name has booked appointments with you. Consult the office hours signup page for more information";
     $headers = "From: $student_email";
     $title = "New Appointment Booking: $student_name";
@@ -25,8 +29,6 @@ if ($_POST[STUDENT_EMAIL_KEY]) {
             <h1 class="title-text">Student Hours Signup</h1>
             <div>
                 <?php
-                $student_name_key = STUDENT_NAME_KEY;
-                $student_email_key = STUDENT_EMAIL_KEY;
                 echo "<span>Student Name:</span> <input type='text' name='$student_name_key' />";
                 echo "<span>Student Email:</span> <input type='text' name='$student_email_key' />";
                 ?>
@@ -69,15 +71,14 @@ if ($_POST[STUDENT_EMAIL_KEY]) {
                 if ($events) {
                     foreach ($events as $time) {
                         $checkbox_value = $date.'-'.$time;
-                        if ($_POST[APPOINTMENTS_KEY] && 
-                            in_array($checkbox_value, $_POST[APPOINTMENTS_KEY])) {
+                        if ($_POST[$appointments_key] && 
+                            in_array($checkbox_value, $_POST[$appointments_key])) {
                             
-                            $student = $_POST[STUDENT_NAME_KEY];
+                            $student_name = $_POST[$student_name_key];
                             $return_string .= "<span class='appointment-text'>
-                                $time - $student</span><br />";
+                                $time - $student_name</span><br />";
                         }
                         else {
-                            $appointments_key = APPOINTMENTS_KEY;
                             $return_string .= "<input type='checkbox' 
                                                       name='{$appointments_key}[]' 
                                                       value='$checkbox_value' />
