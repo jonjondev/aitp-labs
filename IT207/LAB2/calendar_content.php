@@ -78,6 +78,7 @@ if ($student_email) {
                                 $time - $student_name</span><br />";
                         }
                         else {
+                            $appointments_key = APPOINTMENTS_KEY;
                             $return_string .= "<input type='checkbox' 
                                                       name='{$appointments_key}[]' 
                                                       value='$checkbox_value' />
