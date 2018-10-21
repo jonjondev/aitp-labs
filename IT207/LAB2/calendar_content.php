@@ -11,7 +11,7 @@ The LAB2 calendar page content. For being called and displayed by a layout.
             <?php
             define('PROFESSOR_EMAIL', 'euyar@masonlive.gmu.edu');
 
-            if ($_POST['studentEmail']) {
+            if (@$_POST['studentEmail']) {
                 $student_email = $_POST['studentEmail'];
                 $student_name = $_POST['studentName'];
                 $body = "$student_name has booked appointments with you. Consult the office hours signup page for more information";
@@ -113,7 +113,7 @@ The LAB2 calendar page content. For being called and displayed by a layout.
             }
 
             for ($i = 1; $i <= 5; $i++) {
-                if ($_POST["day_$i"]) {
+                if (@$_POST["day_$i"]) {
                     foreach($_POST["day_$i"] as $value) {
                         echo "<input type='hidden' name='day_{$i}[]' value='$value'>";
                     }
