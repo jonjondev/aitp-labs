@@ -108,7 +108,7 @@ The LAB2 calendar page content. For being called and displayed by a layout.
             for ($i = 1; $i <= $number_of_days; $i++) {
                 $current_day = date("$i-m-Y");
                 $week_day = date('w', strtotime($current_day));
-                $day_events = $_POST["day_$week_day"];
+                $day_events = @$_POST["day_$week_day"];
                 make_date_box($i, $day_events);
             }
 
