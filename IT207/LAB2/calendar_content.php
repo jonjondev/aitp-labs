@@ -64,7 +64,7 @@ The LAB2 calendar page content. For being called and displayed by a layout.
                 if ($events) {
                     foreach ($events as $time) {
                         $checkbox_value = $date.'-'.$time;
-                        $appointments = $_POST['appointments'];
+                        $appointments = @$_POST['appointments'];
                         if ($appointments && in_array($checkbox_value, $appointments)) {
                             $student_name = $_POST['studentName'];
                             $return_string .= "<span class='appointment-text'>
