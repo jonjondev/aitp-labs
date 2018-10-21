@@ -7,9 +7,9 @@ The LAB2 calendar page content. For being called and displayed by a layout.
 <?php
 define('PROFESSOR_EMAIL', 'euyar@masonlive.gmu.edu');
 
-$student_email = @$_POST['studentEmail'];
-if ($student_email) {
-    $student_name = @$_POST['studentName'];
+if ($_POST['studentEmail']) {
+    $student_email = $_POST['studentEmail'];
+    $student_name = $_POST['studentName'];
     $body = "$student_name has booked appointments with you. Consult the office hours signup page for more information";
     $headers = "From: $student_email";
     $title = "New Appointment Booking: $student_name";
