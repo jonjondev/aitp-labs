@@ -14,9 +14,9 @@ $appointments_key = APPOINTMENTS_KEY;
 $student_name_key = STUDENT_NAME_KEY;
 $student_email_key = STUDENT_EMAIL_KEY;
 
-if ($_POST[$student_email_key]) {
+$student_email = $_POST[$student_email_key];
+if ($student_email) {
     $student_name = $_POST[$student_name_key];
-    $student_email = $_POST[$student_email_key];
     $body = "$student_name has booked appointments with you. Consult the office hours signup page for more information";
     $headers = "From: $student_email";
     $title = "New Appointment Booking: $student_name";
@@ -71,9 +71,8 @@ if ($_POST[$student_email_key]) {
                 if ($events) {
                     foreach ($events as $time) {
                         $checkbox_value = $date.'-'.$time;
-                        if ($_POST[$appointments_key] && 
-                            in_array($checkbox_value, $_POST[$appointments_key])) {
-                            
+                        $appointments = $_POST[$appointments_key];
+                        if ($appointments && in_array($checkbox_value, $appointments)) {
                             $student_name = $_POST[$student_name_key];
                             $return_string .= "<span class='appointment-text'>
                                 $time - $student_name</span><br />";
@@ -116,7 +115,8 @@ if ($_POST[$student_email_key]) {
             for ($i = 1; $i <= $number_of_days; $i++) {
                 $current_day = date("$i-m-Y");
                 $week_day = date('w', strtotime($current_day));
-                make_date_box($i, $_POST["day_$week_day"]);
+                $day_events = $_POST["day_$week_day"];
+                make_date_box($i, $day_events);
             }
 
             for ($i = 1; $i <= 5; $i++) {
