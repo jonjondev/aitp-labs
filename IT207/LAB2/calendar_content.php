@@ -4,22 +4,22 @@ Jonathan Moallem 10/11/2018
 
 The LAB2 calendar page content. For being called and displayed by a layout.
 -->
-<?php
-define('PROFESSOR_EMAIL', 'euyar@masonlive.gmu.edu');
-
-if ($_POST['studentEmail']) {
-    $student_email = $_POST['studentEmail'];
-    $student_name = $_POST['studentName'];
-    $body = "$student_name has booked appointments with you. Consult the office hours signup page for more information";
-    $headers = "From: $student_email";
-    $title = "New Appointment Booking: $student_name";
-    echo mail(PROFESSOR_EMAIL, $title, $body, $headers) ? "Email successfully sent from $student_email" : "There was an issue sending your email";
-}
-?>
 <div class="lab2-container">
     <form action='./calendar.php' method='post'>
         <div class="lab2-cal-header">
             <h1 class="title-text">Student Hours Signup</h1>
+            <?php
+            define('PROFESSOR_EMAIL', 'euyar@masonlive.gmu.edu');
+
+            if ($_POST['studentEmail']) {
+                $student_email = $_POST['studentEmail'];
+                $student_name = $_POST['studentName'];
+                $body = "$student_name has booked appointments with you. Consult the office hours signup page for more information";
+                $headers = "From: $student_email";
+                $title = "New Appointment Booking: $student_name";
+                echo mail(PROFESSOR_EMAIL, $title, $body, $headers) ? "<p>Email successfully sent from $student_email</p>" : "<p>There was an issue sending your email</p>";
+            }
+            ?>
             <div>
                 <?php
                 echo "<span>Student Name:</span> <input type='text' name='studentName' />";
@@ -108,13 +108,13 @@ if ($_POST['studentEmail']) {
             for ($i = 1; $i <= $number_of_days; $i++) {
                 $current_day = date("$i-m-Y");
                 $week_day = date('w', strtotime($current_day));
-                $day_events = @$_POST["day_$week_day"];
+                $day_events = $_POST["day_$week_day"];
                 make_date_box($i, $day_events);
             }
 
             for ($i = 1; $i <= 5; $i++) {
-                if (@$_POST["day_$i"]) {
-                    foreach(@$_POST["day_$i"] as $value) {
+                if ($_POST["day_$i"]) {
+                    foreach($_POST["day_$i"] as $value) {
                         echo "<input type='hidden' name='day_{$i}[]' value='$value'>";
                     }
                 }
