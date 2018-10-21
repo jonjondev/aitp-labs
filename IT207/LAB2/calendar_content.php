@@ -71,9 +71,9 @@ if ($student_email) {
                 if ($events) {
                     foreach ($events as $time) {
                         $checkbox_value = $date.'-'.$time;
-                        $appointments = @$_POST[$appointments_key];
+                        $appointments = $_POST[APPOINTMENTS_KEY];
                         if ($appointments && in_array($checkbox_value, $appointments)) {
-                            $student_name = @$_POST[$student_name_key];
+                            $student_name = $_POST[$student_name_key];
                             $return_string .= "<span class='appointment-text'>
                                 $time - $student_name</span><br />";
                         }
