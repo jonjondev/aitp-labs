@@ -36,7 +36,7 @@ The home page content. For being called and displayed by a layout.
     <p>I have worked in software development since finishing high school, including working as a Ruby on Rails developer, lead Android developer for a startup, an app development contractor, and a university programming tutor.</p>
     <p>Currently I am working with a startup to build out their new platform going into the future as well as working on some of my own open-source API tools in JavaScript, Ruby and Crystal.</p>
     <p class="fluid-text">
-        See my <a href="https://www.linkedin.com/in/jmo63/">LinkedIn</a> or <a href="https://j-mo63.github.io">GitHub Pages</a> for additional details.
+        See my <a href="https://www.linkedin.com/in/jonjondev/">LinkedIn</a> or <a href="https://jonathanmoallem.com">GitHub Pages</a> for additional details.
     </p>
     <h3>Personal</h3>
     <p>I spend a lot of my free time learning new technologies, reading, playing frisbee, futsal or football, and watching television.</p>
